@@ -1,7 +1,7 @@
 {
-  "name": "svelte-altlokalt-dev",
-  "dockerComposeFile": ["./docker-compose.yml"],
-  "service": "altlokalt-dev",
+  "name": "moneyprinter",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "moneyprinter",
   "workspaceFolder": "/app",
   "customizations": {
     "vscode": {

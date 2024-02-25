@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  moneyprinter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: moneyprinter
+    restart: unless-stopped
+    # Uncomment the following line if you need to expose any ports
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config.json:/app/config.json
+    # Add any environment variables if necessary
+    # environment:
+    #   - ENV_VAR=value
